@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CurrentJobFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title" />
+
+                    <EditText
+                        android:id="@+id/titleEditText"
+                        android:layout_width="196dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:importantForAutofill="no" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/company" />
+
+                    <EditText
+                        android:id="@+id/companyEditText"
+                        android:layout_width="164dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City:" />
+
+                    <EditText
+                        android:id="@+id/cityEditText"
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State:" />
+
+                    <EditText
+                        android:id="@+id/stateEditText"
+                        android:layout_width="194dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cost of living:" />
+
+                    <EditText
+                        android:id="@+id/colEditText"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yearly salary:" />
+
+                    <EditText
+                        android:id="@+id/salaryEditText"
+                        android:layout_width="147dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yearly_bonus" />
+
+                    <EditText
+                        android:id="@+id/bonusEditText"
+                        android:layout_width="148dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Retirement Benefits(%):" />
+
+                    <EditText
+                        android:id="@+id/benefitsEditText"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                        android:importantForAutofill="no" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Relocation Stipend:" />
+
+                    <EditText
+                        android:id="@+id/stipendEditText"
+                        android:layout_width="109dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                        android:importantForAutofill="no" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fund_from_0_to_18000" />
+
+                    <EditText
+                        android:id="@+id/funEditText"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                        android:importantForAutofill="no" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Save" />
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel" />
+
+            </LinearLayout>
+        </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">JobCompare6300</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title:</string>
+    <string name="fund_from_0_to_18000">Fund:(from 0 to 18000)</string>
+    <string name="company">Company:</string>
+    <string name="yearly_bonus">Yearly bonus:</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_or_edit_current_job_details">Enter or edit current job details</string>
+    <string name="enter_job_offers">Enter job offers</string>
+    <string name="adjust_the_comparison_settings">Adjust the comparison settings</string>
+    <string name="compare_job_offers">Compare job offers</string>
+</resources>

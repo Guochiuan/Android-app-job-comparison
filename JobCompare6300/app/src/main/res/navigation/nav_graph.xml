@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="edu.gatech.seclass.jobcompare6300.fragment.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_currentJobFragment"
+            app:destination="@id/currentJobFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_offersInputFragment"
+            app:destination="@id/offersInputFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_offersListFragment"
+            app:destination="@id/offersListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentJobFragment"
+        android:name="edu.gatech.seclass.jobcompare6300.fragment.CurrentJobFragment"
+        android:label="fragment_current_job"
+        tools:layout="@layout/fragment_current_job" >
+        <action
+            android:id="@+id/action_currentJobFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offersInputFragment"
+        android:name="edu.gatech.seclass.jobcompare6300.fragment.OffersInputFragment"
+        android:label="fragment_offers_input"
+        tools:layout="@layout/fragment_offers_input" >
+        <action
+            android:id="@+id/action_offersInputFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_offersInputFragment_to_offersCompareFragment"
+            app:destination="@id/offersCompareFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="edu.gatech.seclass.jobcompare6300.fragment.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offersListFragment"
+        android:name="edu.gatech.seclass.jobcompare6300.fragment.OffersListFragment"
+        android:label="fragment_offers_list"
+        tools:layout="@layout/fragment_offers_list" >
+        <action
+            android:id="@+id/action_offersListFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_offersListFragment_to_menuFragment2"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_offersListFragment_to_offersCompareFragment"
+            app:destination="@id/offersCompareFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offersCompareFragment"
+        android:name="edu.gatech.seclass.jobcompare6300.fragment.OffersCompareFragment"
+        android:label="fragment_offers_compare"
+        tools:layout="@layout/fragment_offers_compare" >
+        <action
+            android:id="@+id/action_offersCompareFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_offersCompareFragment_to_offersListFragment"
+            app:destination="@id/offersListFragment" />
+        <action
+            android:id="@+id/action_offersCompareFragment_to_menuFragment2"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_offersCompareFragment_to_menuFragment3"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>
